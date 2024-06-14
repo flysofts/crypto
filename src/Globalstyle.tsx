@@ -16,7 +16,7 @@ body{
     color: ${props => props.theme.textColor};
 }
 ul{list-style: none}
-a{text-decoration: none; color: #000;}
+a{text-decoration: none; color: inherit;}
 `
 export default GlobalStyle
 
