@@ -21,10 +21,8 @@ interface ChartProps {
 
 function Chart() {
   const { coinId } = useOutletContext<ChartProps>();
-  const { isLoading, data } = useQuery<Historical[]>(
-    ["chart", coinId],
-    () => fetchCoinHistory(coinId),
-    
+  const { isLoading, data } = useQuery<Historical[]>(["chart", coinId], () =>
+    fetchCoinHistory(coinId)
   );
 
   return (
